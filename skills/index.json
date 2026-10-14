@@ -1,0 +1,89 @@
+{
+  "arch-design": {
+    "description": "@Architect 怎么给 SC-SDLC 做技术设计与架构设计: MCP-first 契约优先、ADR 落定、NFR 对照、分期切片。产出写进 https://gitlab-ex.mcd.com.cn/sc-platform/PPM/docs `architecture/adr/` 与 `architecture/contracts/`, 走 MR。自评口径引用 `standards/review-checklist.md` §4 架构视角。"
+  },
+  "architecture-reviewer": {
+    "description": "@Critic 评架构概要设计 / 架构文档时的薄评审视角: 逐条对照 https://gitlab-ex.mcd.com.cn/sc-platform/PPM/powerjob/standards/review-checklist.md §4 架构视角, 不另带清单。"
+  },
+  "code-review-and-quality": {
+    "description": "五轴评审 + severity 分级 + 诚实评审 + 依赖审查（Reviewer 用）。"
+  },
+  "communication-and-writing": {
+    "description": "沟通精简（结论先行/挑重点/带证据）+ 写作规范（朴素/无 AI 腔）+ @mention 唤起格式（全队挂载）。"
+  },
+  "dba-schema-review": {
+    "description": "DBA / 数据库设计评审视角(通用): 对建表 / 改数据模型的 MR 审 schema 归属唯一 owner、建表前查重、约束保不变量、索引对齐查询、迁移可回滚与在线性; 引擎相关条款按 project.db.* 配置启用。挂 Architect(产出)+ Critic(评审)。"
+  },
+  "debugging-and-error-recovery": {
+    "description": "五步 triage 系统化定位根因 + 加护栏防复发（Dev 修 bug 用）。"
+  },
+  "defect-management": {
+    "description": "缺陷全生命周期：登记规范 + P0-P3 定级与 SLA + 关闭规则 + 复盘触发 + 度量目标（逃逸率/P0P1 回归 100%）（QA 用，缺陷治理单一真源）。"
+  },
+  "fact-check-protocol": {
+    "description": "评审后事实核查复检：删掉 diff 能证明为假的发现，默认全保留（不对称原则）+ 保护性主题否决 + Ground A/B（Reviewer 用）。"
+  },
+  "frontend-ui-engineering": {
+    "description": "生产级前端实现：组件架构、设计系统对齐、全状态、响应式、可访问性（Dev 做 UI 用）。"
+  },
+  "git-workflow-and-versioning": {
+    "description": "原子提交、commit 规范、变更尺寸、主干开发（Dev 提交用）。"
+  },
+  "gitlab-workflow": {
+    "description": "对接 MCD GitLab 的读代码/提交/MR 流程：走 GitLab MCP 工具，分支从 release 切、MR 目标由人类给定，agent 绝不 merge（Dev 用）。"
+  },
+  "incremental-implementation": {
+    "description": "薄纵向切片交付，范围纪律，特性开关，可回滚（Dev 实现用）。"
+  },
+  "learnings": {
+    "description": "经验规则台账（learnings/LEARNINGS.md）：一条一行+带证据+按域分类，评审/复盘后提炼规则；TechLead 兼维护。"
+  },
+  "merge-gate-matrix": {
+    "description": "「变更类型 -> 过什么门 -> 谁合并」单一真源 + 6 条铁律 + S4 门构成 + 分支策略（全队挂载）。"
+  },
+  "mockup-design": {
+    "description": "把 PRD/spec 变成可评审的 mockup：需求覆盖、设计系统对齐、全状态、响应式、可访问性（Product 用）。"
+  },
+  "mr-four-part-checklist": {
+    "description": "MR 四段自检：根因单 / 口径同步清单 / 引用可回查 / 安全 fail-closed 声明 + 断言范围=验证范围红线（TechLead/Dev 用）。"
+  },
+  "mr-traceability": {
+    "description": "PRD ↔ MR 溯源三层闸门：L1 机械/L2 语义/L3 台账 + PRD 引用格式 + 关联单号 + PRD 先行铁律（TechLead/Dev/Architect 用）。"
+  },
+  "performance-optimization": {
+    "description": "独立性能审计 persona：N+1/无界抓取/索引/缓存/重渲染（Reviewer 性能轴用）。"
+  },
+  "planning-and-task-breakdown": {
+    "description": "把工作拆成小、可验证、带验收标准的原子任务，按依赖排序并设检查点（TechLead 拆解用）。"
+  },
+  "prd-critic": {
+    "description": "对一份 SC-SDLC 域 PRD 跑质量+完备+合规+文风 checklist, 输出点名到具体条目的修复建议。只评不改。任一 P0 未过 → 最高 ⚠️待修 / status=changes-requested。由 @Critic 引用。"
+  },
+  "prd-management": {
+    "description": "把需求变成可评审、可追溯的 PRD（六段结构 + 变更日志），作为唯一需求真源；变更必须人类确认（Product 用）。"
+  },
+  "review-checklist": {
+    "description": "评审视角清单单一真源：各轴触发条件 + 检查项 + severity 分级（Reviewer/QA 用）。"
+  },
+  "security-and-hardening": {
+    "description": "独立安全审计 persona：注入/XSS/SSRF/密钥/供应链/LLM（Reviewer 安全轴用）。"
+  },
+  "security-redlines": {
+    "description": "安全红线五条：凭据绝不入库 / 绝不编造 URL / fail-closed / 绝不 merge / 不确定上抛（全队挂载）。"
+  },
+  "spec-driven-development": {
+    "description": "先写规格（六要素 + 假设显式化）经人类 approve 再写代码（Dev 规格用）。"
+  },
+  "team-canon": {
+    "description": "团队通用底座: 全 agent 共享的铁律 + 真源索引(功能清单/共享件/标准/经验规则/agent即代码)。只放指针不复制内容。新建 agent 默认挂载以继承团队知识。"
+  },
+  "test-driven-development": {
+    "description": "红绿重构 + 测试金字塔 + Prove-It 修 bug + 测行为不测实现（Dev/QA 共用）。"
+  },
+  "test-strategy-and-execution": {
+    "description": "测试策略 + 用例三件套 + AC 证据映射 + 通过率硬门 + P0/P1 回归 100% + 误判复核 + 签核（QA 用；S4 不复跑单测，做证据审查与补强）。"
+  },
+  "ui-design-review": {
+    "description": "当你需要做Mockup评审，审查设计稿是否覆盖 PRD 需求，或对比设计稿与前端实现的视觉还原度时使用此 Skill"
+  }
+}

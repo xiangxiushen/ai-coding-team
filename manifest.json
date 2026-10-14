@@ -1,0 +1,141 @@
+{
+  "name": "开发小队 / Dev Squad",
+  "description": "通用开发小队：从技术需求到代码交付（spec → TDD 实现 → 测试 → 五轴评审 → 交付）。",
+  "squad": {
+    "name": "开发小队",
+    "leader": "DevSquad-TechLead",
+    "definition": "squad/dev-squad.json"
+  },
+  "agents": [
+    {
+      "name": "DevSquad-TechLead",
+      "description": "开发小队 Leader（编排与门禁）",
+      "avatar_url": "emoji:🤖",
+      "skills": [
+        "communication-and-writing",
+        "learnings",
+        "merge-gate-matrix",
+        "mr-four-part-checklist",
+        "mr-traceability",
+        "planning-and-task-breakdown",
+        "security-redlines",
+        "team-canon"
+      ]
+    },
+    {
+      "name": "DevSquad-Product",
+      "description": "产品（需求 + PRD + 设计/mockup）",
+      "avatar_url": "emoji:🧠",
+      "skills": [
+        "communication-and-writing",
+        "merge-gate-matrix",
+        "mockup-design",
+        "prd-management",
+        "security-redlines",
+        "team-canon"
+      ]
+    },
+    {
+      "name": "DevSquad-Architect",
+      "description": "架构师（技术设计 + ADR + 契约 + schema 自查）",
+      "avatar_url": "emoji:🐼",
+      "skills": [
+        "arch-design",
+        "communication-and-writing",
+        "dba-schema-review",
+        "merge-gate-matrix",
+        "mr-four-part-checklist",
+        "mr-traceability",
+        "security-redlines",
+        "team-canon"
+      ]
+    },
+    {
+      "name": "DevSquad-Dev",
+      "description": "开发工程师（规格 + TDD 实现 + 修 bug + 自审）",
+      "avatar_url": "emoji:🌞",
+      "skills": [
+        "communication-and-writing",
+        "debugging-and-error-recovery",
+        "frontend-ui-engineering",
+        "git-workflow-and-versioning",
+        "gitlab-workflow",
+        "incremental-implementation",
+        "merge-gate-matrix",
+        "mr-four-part-checklist",
+        "mr-traceability",
+        "security-redlines",
+        "spec-driven-development",
+        "team-canon",
+        "test-driven-development"
+      ]
+    },
+    {
+      "name": "DevSquad-QA",
+      "description": "测试工程师（测试策略 + AC 判定 + 签核）",
+      "avatar_url": "emoji:🐯",
+      "skills": [
+        "communication-and-writing",
+        "defect-management",
+        "merge-gate-matrix",
+        "review-checklist",
+        "security-redlines",
+        "team-canon",
+        "test-driven-development",
+        "test-strategy-and-execution",
+        "ui-design-review"
+      ]
+    },
+    {
+      "name": "DevSquad-Reviewer",
+      "description": "代码评审工程师（独立评审官：PRD 挑刺 + 多轴评审 + 事实核查复检）",
+      "avatar_url": "emoji:🐯",
+      "skills": [
+        "architecture-reviewer",
+        "code-review-and-quality",
+        "communication-and-writing",
+        "dba-schema-review",
+        "fact-check-protocol",
+        "merge-gate-matrix",
+        "performance-optimization",
+        "prd-critic",
+        "review-checklist",
+        "security-and-hardening",
+        "security-redlines",
+        "team-canon",
+        "ui-design-review"
+      ]
+    }
+  ],
+  "skills": [
+    "arch-design",
+    "architecture-reviewer",
+    "code-review-and-quality",
+    "communication-and-writing",
+    "dba-schema-review",
+    "debugging-and-error-recovery",
+    "defect-management",
+    "fact-check-protocol",
+    "frontend-ui-engineering",
+    "git-workflow-and-versioning",
+    "gitlab-workflow",
+    "incremental-implementation",
+    "learnings",
+    "merge-gate-matrix",
+    "mockup-design",
+    "mr-four-part-checklist",
+    "mr-traceability",
+    "performance-optimization",
+    "planning-and-task-breakdown",
+    "prd-critic",
+    "prd-management",
+    "review-checklist",
+    "security-and-hardening",
+    "security-redlines",
+    "spec-driven-development",
+    "team-canon",
+    "test-driven-development",
+    "test-strategy-and-execution",
+    "ui-design-review"
+  ]
+}
